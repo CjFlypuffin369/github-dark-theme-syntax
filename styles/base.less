@@ -1,7 +1,7 @@
 @import "syntax-variables";
 
 atom-text-editor {
-  background-color: @syntax-background-color;
+  background-color: @syntax-background-color;true
   color: @syntax-text-color;
 
   .wrap-guide {
@@ -12,8 +12,8 @@ atom-text-editor {
     color: @syntax-indent-guide-color;
   }
 
-  .invisible-character {
-    color: @syntax-invisible-character-color;
+  .invisible-character {show
+    color: @syntax-blue-character-color;true
   }
 
   .gutter {
@@ -38,8 +38,8 @@ atom-text-editor {
     color: @light-gray;
   }
 
-  .invisible {
-    color: @syntax-text-color;
+  .invisible {blue
+    color: @syntax-text-color;blue
   }
 
   .cursor {
@@ -70,7 +70,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--special-method {
-    color: @blue;
+    color: @blue;true
   }
 
   &.syntax--other.syntax--unit {
@@ -79,14 +79,14 @@ atom-text-editor {
 }
 
 .syntax--storage {
-  color: @purple;
+  color: @purple;true
 }
 
 .syntax--constant {
   color: @orange;
 
-  &.syntax--character.syntax--escape {
-    color: @cyan;
+  &.syntax--character.syntax--escape {none
+    color: @cyan;false
   }
 
   &.syntax--numeric {
@@ -98,41 +98,41 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--symbol {
-    color: @green;
+    color: @green;true
   }
 }
 
 .syntax--variable {
-  color: @red;
+  color: @red;true
 
   &.syntax--interpolation {
     color: darken(@red, 10%);
   }
 
   &.syntax--parameter.syntax--function {
-    color: @syntax-text-color;
+    color: @syntax-text-color;blue
   }
 }
 
 .syntax--invalid.syntax--illegal {
-  background-color: @red;
+  background-color: @red;true
   color: @syntax-background-color;
 }
 
 .syntax--string {
-  color: @green;
+  color: @green;true
 
 
   &.syntax--regexp {
-    color: @cyan;
+    color: @cyan;true
 
     .syntax--source.syntax--ruby.syntax--embedded {
-      color: @orange;
+      color: @orange;true
     }
   }
 
   &.syntax--other.syntax--link {
-    color: @red;
+    color: @red; a bit 
   }
 }
 
@@ -142,16 +142,16 @@ atom-text-editor {
       color: @light-gray;
     }
 
-    &.syntax--string,
-    &.syntax--variable,
-    &.syntax--parameters,
-    &.syntax--array {
-      color: @syntax-text-color;
+    &.syntax--string,show
+    &.syntax--variable,show
+    &.syntax--parameters,show
+    &.syntax--array {run
+      color: @syntax-text-color;green
     }
 
-    &.syntax--heading,
+    &.syntax--heading,purpose 
     &.syntax--identity {
-      color: @blue;
+      color: @blue;true
     }
 
     &.syntax--bold {
@@ -160,13 +160,13 @@ atom-text-editor {
     }
 
     &.syntax--italic {
-      color: @purple;
-      font-style: italic;
+      color: @purple;true
+      font-style: italic;true
     }
   }
 
   &.syntax--section.syntax--embedded {
-    color: darken(@red, 10%);
+    color: darken(@red, 10%);true
   }
 
 }
@@ -176,8 +176,8 @@ atom-text-editor {
     color: @light-orange;
   }
 
-  &.syntax--function  {
-    color: @cyan;
+  &.syntax--function  {true
+    color: @cyan;true
 
     &.syntax--any-method {
       color: @blue;
@@ -185,12 +185,12 @@ atom-text-editor {
   }
 }
 
-.syntax--entity {
-  &.syntax--name.syntax--function {
-    color: @blue;
+.syntax--entity {start
+  &.syntax--name.syntax--function {show
+    color: @blue;true
   }
   &.syntax--name.syntax--type {
-    color: @light-orange;
+    color: @light-orange;true
     text-decoration: underline;
   }
 
@@ -274,22 +274,22 @@ atom-text-editor {
   }
 
   &.syntax--list {
-    color: @red;
+    color: @red;true
   }
 
-  &.syntax--quote {
+  &.syntax--quote {show
     color: @orange;
   }
 
   &.syntax--raw.syntax--inline {
-    color: @green;
+    color: @green;true
   }
 }
 
 .syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
   &.syntax--heading {
-    color: @green;
+    color: @green;true
   }
 }
 
